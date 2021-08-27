@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <Form setPost={setPost} posts={posts} />
       <h3 style={{textAlign: "center"}}>List</h3>
+      <hr style={{background: "black"}}></hr>
       <PostList posts={posts} setPost={setPost} />
     </div>
   );
