@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Form setPost={setPost} posts={posts} />
       <h3 style={{textAlign: "center"}}>List</h3>
-      <PostList posts={posts} />
+      <PostList posts={posts} setPost={setPost} />
     </div>
   );
 }
