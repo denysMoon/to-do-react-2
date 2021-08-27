@@ -1,14 +1,15 @@
 import PostItem from "../PostItem/PostItem"
+import Title from "../Title/Title"
 
 const PostList = ( { posts } ) =>{
     console.log(posts)
     return(
         <div>
             {
-                !posts.length ? "no" : (
+                !posts.length ? <Title /> : (
                     posts.map(el =>{
                        return <PostItem title={el.title}
-                        post={el.post} key={el.date} />
+                        post={el.post} date={el.date} key={el.date} />
                     })
                 )
             }

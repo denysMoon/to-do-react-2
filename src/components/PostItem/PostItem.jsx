@@ -1,10 +1,12 @@
 import Button from '../UI/button/Button'
 
-const PostItem = ( {title, post} ) =>{
+import moment from 'moment'
+
+const PostItem = ( {title, post, date} ) =>{
     return(
         <div className="post">
             <div className="post-content">
-                <h3>{title}</h3>
+                <h3><span style={{fontSize: "15px", color: "lightgreen"}}>{date.toLocaleDateString()}, {date.getHours()}:{date.getMinutes()}</span> {title}</h3>
                 {post}
             </div>
             <div className="post-button">

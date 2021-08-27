@@ -14,7 +14,7 @@ const Form = ( { setPost, posts } ) =>{
             {
                 title: inputTitle,
                 post: inputPost,
-                date: Date.now()
+                date: new Date()
             }
         ])
 
