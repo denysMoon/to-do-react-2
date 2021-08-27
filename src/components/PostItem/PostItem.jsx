@@ -1,12 +1,14 @@
-const PostItem = ( props ) =>{
+import Button from '../UI/button/Button'
+
+const PostItem = ( {title, post} ) =>{
     return(
         <div className="post">
             <div className="post-content">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident rem saepe totam velit voluptatibus adipisci fuga!
-                Unde in architecto expedita nobis, corporis minima! Repellat, possimus eligendi quasi repellendus tempore ipsam.
+                <h3>{title}</h3>
+                {post}
             </div>
             <div className="post-button">
-                <button>Button</button>
+                <Button>Button</Button>
             </div>
         </div>
     )

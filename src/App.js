@@ -1,12 +1,18 @@
 import './styles/App.css';
 
-import PostItem from './components/PostItem/PostItem'
+import PostList from './components/PostList/PostList';
+import { useState } from 'react';
+import Form from './components/Form/Form';
 
 function App() {
+  const [posts, setPost] = useState([])
+
+
   return (
     <div className="App">
-      <h3>React JS</h3>
-      <PostItem />
+      <Form setPost={setPost} posts={posts} />
+      <h3 style={{textAlign: "center"}}>List</h3>
+      <PostList posts={posts} />
     </div>
   );
 }
