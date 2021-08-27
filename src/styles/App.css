@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+.App{
+    width: 800px;
+}
+.post{
+    border: 2px solid lightcoral;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
