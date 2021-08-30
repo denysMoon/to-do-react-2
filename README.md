@@ -1,1 +1,1 @@
-## [Netlify](https://vibrant-mclean-9930ee.netlify.app/posts)
+## [Netlify](https://vibrant-mclean-9930ee.netlify.app/)
