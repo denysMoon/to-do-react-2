@@ -16,7 +16,7 @@ const PostItem = ( {title, post, posts, date, setPost} ) =>{
             </div>
             <div className="post-button">
                 <Button>Edit</Button>
-                <Button deletePost={deletePost} >Delete</Button>
+                <Button onClick={deletePost}>Delete</Button>
             </div>                  
         </div>
     )

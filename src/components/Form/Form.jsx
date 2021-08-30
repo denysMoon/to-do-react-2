@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from '../UI/button/Button'
 import Input from '../UI/input/Input'
 
-const Form = ( { setPost, posts } ) =>{
+const Form = ( { setPost, posts, setModal } ) =>{
     const [inputTitle, setInputTitle] = useState('')
     const [inputPost, setInputPost] = useState('')
 
@@ -17,6 +17,8 @@ const Form = ( { setPost, posts } ) =>{
                 date: new Date()
             }
         ])
+
+        setModal(false)
 
         setInputTitle('')
         setInputPost('')

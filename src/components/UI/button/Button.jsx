@@ -1,8 +1,10 @@
 import s from './Button.module.css'
 
+// onClick={props.deletePost}
+
 const Button = ({ children ,...props}) =>{
     return(
-        <button onClick={props.deletePost} className={s.button}>
+        <button {...props} className={s.button}>
             {children}
         </button>
     )

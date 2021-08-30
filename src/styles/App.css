@@ -22,3 +22,22 @@
     flex-direction: column;
     justify-content: center;
 }
+.nav-bar{
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.active-link{
+    color: green;
+}
