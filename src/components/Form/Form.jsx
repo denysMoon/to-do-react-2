@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Button from '../UI/button/Button'
 import Input from '../UI/input/Input'
 
-const Form = ( { setPost, posts, setModal } ) =>{
-    const [inputTitle, setInputTitle] = useState('')
-    const [inputPost, setInputPost] = useState('')
+const Form = ( { setPost, posts, setModal, setInputTitle, inputTitle, inputPost, setInputPost } ) =>{
+    // const [inputTitle, setInputTitle] = useState('')
+    // const [inputPost, setInputPost] = useState('')
 
     const onSubmit = e =>{
         e.preventDefault()
@@ -41,7 +41,8 @@ const Form = ( { setPost, posts, setModal } ) =>{
             onChange={onChangeTitle}
             value={inputTitle}
             />
-            <Input type="text"
+            <Input className="input-post"
+            type="text"
             placeholder="Post"
             onChange={onChangePost}
             value={inputPost}

@@ -24,6 +24,7 @@
 }
 .nav-bar{
     /* width: 100%; */
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -40,4 +41,9 @@ a:hover{
 }
 .active-link{
     color: green;
+}
+.input-post{
+    height: 60px;
+    width: 100%;
+    margin-top: 5px;
 }
